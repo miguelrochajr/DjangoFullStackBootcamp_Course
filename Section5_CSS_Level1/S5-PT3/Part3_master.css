@@ -1,0 +1,30 @@
+.firstDiv{ /*classes stars with a dot!*/
+  color: blue;
+}
+
+.secondDiv{
+  color:red;
+}
+
+#singledout{
+  color: green;
+  text-decoration: line-through;
+}
+
+/*{ /*selects everything and overwrites it. Except IDs (the ones with the #)
+  color: black
+
+}*/
+
+h3 + ul { /*the '+' says: select all unordered list that are right next to ul'*/
+  border: 4px dotted purple;
+}
+
+li a{
+  color: purple;
+}
+
+li a[href="www.miguelrochajr.wordpress.com"]{
+  color: blue;
+  border: 5px solid orange;
+}

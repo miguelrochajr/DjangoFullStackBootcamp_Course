@@ -1,0 +1,28 @@
+Pop Quiz!
+
+
+Use the following information to make a
+table about Country GDP.
+
+Source for data below:
+https://en.wikipedia.org/wiki/List_of_countries_by_GDP_(nominal)
+
+Make a table with HTML consisting of 3 columns:
+Country Name
+Country Flag
+GDP (millions of USD)
+
+Your table will have 3 rows.
+Use the information below to attribute the cells correctly:
+
+United States
+US Flag: "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/190px-Flag_of_the_United_States.svg.png"
+GDP: 18,561,930
+
+India
+Indian Flag: "https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/150px-Flag_of_India.svg.png"
+GDP: 2,250,990
+
+United Kingdom
+UK Flag: "https://upload.wikimedia.org/wikipedia/en/thumb/a/ae/Flag_of_the_United_Kingdom.svg/200px-Flag_of_the_United_Kingdom.svg.png"
+GDP: 2,649,890

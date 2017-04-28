@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Hotel Feedback Form!</h1>
+
+      <!-- Things we will cover
+      1. Linking Radio Buttons
+      2. Drop-down Menus
+      3. Text Area inputs -->
+
+
+        <form method="get">
+          <h3>Are you from inside the USA? Or outside?</h3>
+          <label for="inside">Location:</label>
+          <input type="radio" id="inside" name="loc_choice" value="">
+
+          <label for="outside">Outside:</label>
+          <input type="radio" id="outside" name= "loc_choice" value="out">
+
+
+          <p>How was your service? (3 being the best)</p>
+          <select name="stars">
+            <option value="Great">3</option>
+            <option value="Okay">2</option>
+            <option value="Bad">1</option>
+          </select>
+
+
+          <p>Any other Feedback?</p>
+
+          <textarea name="name" rows="8" cols="80"></textarea>
+
+
+          <input type="submit" name="" value="Submit Feedback">
+
+
+        </form>
+
+
+  </body>
+</html>

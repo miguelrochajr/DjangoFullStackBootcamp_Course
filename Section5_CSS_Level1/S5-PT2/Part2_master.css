@@ -1,0 +1,26 @@
+/* comment here */
+/*selected tag{
+  property: value;
+
+}*/
+
+body{
+  background: url(http://kingofwallpapers.com/beach-sunset/beach-sunset-006.jpg);
+  /*background: red; works the same way*/
+}
+
+div{
+  background-color: blue;
+  border-color: orange;
+  border-width: 5px;
+  border-style: double;
+}
+
+p{
+  color: yellow;
+}
+
+span{
+  background: red;
+  color: black;
+}

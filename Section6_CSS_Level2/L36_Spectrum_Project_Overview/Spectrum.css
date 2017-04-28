@@ -1,0 +1,42 @@
+#top{
+  /*border: 4px solid blue;
+  width: 25%;*/
+  text-align: center;
+  /*top, right, bottom, left*/
+  /*margin: 10px 20px 100px 400px;*/
+  /*margin: auto;*/
+  font-family: 'Oswald', sans-serif;
+}
+
+.table{
+  margin: auto;
+  margin-left: 100px;
+}
+
+td{
+  height: 200px;
+  width: 100px;
+  border: 6px solid white;
+}
+
+#one{
+  background: #264653;
+}
+
+#two{
+  background: #2A9D8F;
+}
+
+#three{
+  background: #E9C46A;
+}
+
+#four{
+  background: #F4A261;
+}
+
+#five{
+  background: #E76F51;
+}
+
+/**/

@@ -1,0 +1,65 @@
+Hey there! Here is a reference of the commands for using the Command Line on
+a Windows PC. Keep in mind, these are just the most basic commands that you
+should know, there are a lot more commands than just these.
+
+----------------------------
+--- Changing Directory -----
+----------------------------
+
+Use cd to change directory. So for example, if you are in the main folder for
+all the notes and you saved them to your downloads folder and you wanted to
+change into this directory, it would look like this:
+
+C:/Users/Jose/Downloads  cd Commands_Line_Crash_Course
+
+would then result in:
+
+C:/Users/Jose/Downloads/Commands_Line_Crash_Course
+
+Remember that you can usually use the Tab button on your keyboard to
+auto-complete file paths!
+
+Need to go back up a folder? That's easy its just cd followed by two periods/dots:
+
+C:/Users/Jose/Downloads/Commands_Line_Crash_Course cd ..
+
+would then result in:
+
+C:/Users/Jose/Downloads/
+
+-----------------------------------------
+--- Displaying your Current Directory ---
+-----------------------------------------
+
+For most Windows Command prompt you should usually be able to see your directory
+directly to the left of your cursor, but in case you have any doubt just use
+cd by itself to report back the current directory:
+
+
+C:/Users/Jose/Downloads/ cd
+
+would then result in:
+
+C:/Users/Jose/Downloads/
+
+--------------------------------------------------------
+--- Listing all the Folders in the Current Directory ---
+--------------------------------------------------------
+
+You can use dir to list all the files and folders in the current directory:
+
+C:/Users/Jose/Downloads/ dir
+
+This would then result in an output of all files and folders inside the
+Downloads folder.
+
+----------------------------
+--- Clearing the Screen ----
+----------------------------
+
+You can use cls to clear the command prompt screen. You can always press up on
+the arrow key to get back older commands (although you can't undo commands)
+
+More commands:
+
+http://skimfeed.com/blog/windows-command-prompt-ls-equivalent-dir/

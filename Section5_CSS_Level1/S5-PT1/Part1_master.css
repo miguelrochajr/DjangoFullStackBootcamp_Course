@@ -1,0 +1,21 @@
+/* comment here */
+/*selected tag{
+  property: value;
+
+}*/
+
+h1{
+  color: blue;
+}
+
+li{
+  color: rgb(255, 97,0);
+}
+
+p{
+  color: #0895a8 /* HEX code for RGB */
+}
+
+h4{
+  color: rgba(255, 97,0, 0.5); /* the third one is the alpha: 1 is full opaque and 0 full transparent */
+}

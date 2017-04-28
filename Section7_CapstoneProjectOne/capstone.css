@@ -1,0 +1,36 @@
+body{
+  font-family: 'Noto Sans', sans-serif;
+  color: #FDFFFC;
+  text-align: center;
+  background-color: #011627;
+  border: 60px solid #2EC4B6;
+  border-top: 0px;
+  margin: 0px;
+  /*text-align: justify;*/
+}
+
+p{
+  color: #FDFFFC;
+  padding-top: 5%;
+  padding-left: 20%;
+  padding-right: 20%
+}
+
+.userinput{
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+h2{
+  margin-bottom: 2%;
+}
+
+#signup{
+  border-radius: 25px;
+  background: #FF9F1C;
+  height: 80px;
+  width: 150px;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 1.2em;
+  margin-bottom: 4px;
+}

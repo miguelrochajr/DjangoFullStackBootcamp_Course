@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>jQuery</title>
+
+    <style>
+      .turnBlue{
+        color:white;
+        background: blue;
+      }
+      .turnRed{
+        color:white;
+        background: red;
+      }
+    </style>
+
+    <script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container">
+
+
+    <h1>Selecting with jQuery</h1>
+    <p>You can use the $ sign to select elements from the DOM!
+      It will feel a lot like selecting using querySelectorAll().
+    </p>
+    <p>For example:</p>
+    <ul>
+      <li>Selecting all a tags:</li>
+      <ul>
+        <li>$('a')</li>
+      </ul>
+      <li>Selecting all elements from the class "container"</li>
+      <ul>
+        <li>$(".container")</li>
+      </ul>
+      <li>Selecting all elements with id "special"</li>
+      <ul>
+        <li id="special">$("#special")</li>
+      </ul>
+    </ul>
+    <h2>Here are some inputs</h2>
+    <h3>Later on we will use jQuery to interact with them!</h3>
+
+    <input type="text" name="" value="Enter Your Name">
+    <input type="submit" name="" value="Submit">
+    </div>
+
+  </body>
+</html>

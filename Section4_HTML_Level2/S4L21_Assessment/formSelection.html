@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>StudyHUB Sign Up</title>
+  </head>
+  <body>
+    <h1>StudyHUB Sign Up Page!</h1>
+    <p>Please Note: First name, Last name, password, and email are required fields.</p>
+
+    <!-- the action on the form it takes you to our other html page! -->
+    <form action="thankyou.html" method="get">
+      
+      <label for="firstName">First Name: </label>
+      <input id=firstName type="text" name="" placeholder="first name" required>
+
+      <label for="lastName">Last Name: </label>
+      <input id=lastName type="text" name="" placeholder="last name" required>
+      <!-- to skip a line, just make an empty paragraph. You can also use two <br> -->
+      <p></p>
+
+      <label for="email">Email: </label>
+      <input id=email type="email" name="" placeholder="email" required>
+      <label for="password">Password: </label>
+      <input id=password type="password" name="" placeholder="" required>
+      <p></p>
+
+      <p>Are you the age of 18?</p>
+      <label for="yes">Yes</label>
+      <input id=yes type="radio" name="age" value="">
+
+      <label for="no">No</label>
+      <input id=no type="radio" name="age" value="">
+
+      <p>Do you have a Credit Card or PayPal?</p>
+      <!-- note that the name of the select is the name of the dropdown menu -->
+      <select name="payment">
+        <option value="card">Credit Card</option>
+        <option value="PayPal">PayPal</option>
+      </select>
+
+      <p></p>
+
+      <input type="submit" name="" value="Submit info">
+
+    </form>
+
+
+  </body>
+</html>

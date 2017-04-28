@@ -1,0 +1,21 @@
+body{
+  /*background: gray;*/
+  background: url(http://www.resortcollection.com/wp-content/themes/resortcollection/property-images/summit/summit-beach-resort-panama-city-beach-fl-beach-01.jpg);
+  background-repeat:no-repeat;
+}
+
+div{
+  background: blue;
+  border: orange;
+  border-width: thick; /* 10 px */
+  border-style: dotted;
+
+  }
+
+p{
+  color: yellow;
+}
+span{
+  background: red;
+  color: black;
+}
