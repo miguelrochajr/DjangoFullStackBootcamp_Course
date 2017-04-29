@@ -1,0 +1,19 @@
+.board button{
+  width: 100px;
+  height: 100px;
+  background: gray;
+  margin: 1px;
+  /*The border-radius with 50% means that we are making a circle*/
+  border-radius: 50%;
+  border: 4px solid black;
+}
+
+.turnBlue{
+  width: 100px;
+  height: 100px;
+  background: blue;
+  margin: 1px;
+  /*The border-radius with 50% means that we are making a circle*/
+  border-radius: 50%;
+  border: 4px solid black;
+}
