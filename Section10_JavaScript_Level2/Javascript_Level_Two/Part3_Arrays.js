@@ -1,6 +1,7 @@
 // ARRAYS
 
 // Arrays allow us to store multiple values as a single variable, just like a list!
+//note by miguel: they are in sequence
 
 // Why use arrays? It allows you to save yourself the effort of multiple variables
 // For example, instead of:
@@ -101,7 +102,8 @@ for(var i = 0;i<arr.length;i++){
 var arr = ['A','B','C']
 // Don't do this!
 for (letter in arr) {
-  alert(letter);
+  console.log(letter);
+  //alert(letter);
 }
 
 // Because of this you will want to use a for/of loop. For example:
