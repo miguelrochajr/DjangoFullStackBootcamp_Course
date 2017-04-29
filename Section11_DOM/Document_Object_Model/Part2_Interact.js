@@ -19,7 +19,7 @@ x.innerHTML = "This is <strong>BOLD</strong>"
 
 /////////////////
 // Attributes //
-///////////////
+////////////////
 
 var special = document.querySelector("#special")
 var specialA = y.querySelector("a")
