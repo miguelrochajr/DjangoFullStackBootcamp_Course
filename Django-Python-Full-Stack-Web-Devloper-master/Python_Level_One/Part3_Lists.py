@@ -184,7 +184,7 @@ matrix[0][0]
 # But in case you want to know now, here are a few examples!
 
 # Build a list comprehension by deconstructing a for loop within a []
-first_col = [row[0] for row in matrix]
+first_col = [row[0] for row in matrix] #this will grab the first element of each row of the matrix
 
 first_col
 

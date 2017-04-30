@@ -58,7 +58,7 @@ t.count('one')
 ### Immutability ###
 ####################
 
-# It can't be stressed enough that tuples are immutable.
+# It can't be stressed enough that tuples are IMMUTABLE.
 # To drive that point home:
 
 t[0]= 'change'

@@ -140,6 +140,25 @@ print(x)
 print(y)
 
 # ######################
+# Type checking
+# ######################
+#   Since python can handle multiple types into its function arguments, it is a good
+# idea to check its types. For example. the following functions should output the sum of two integers
+
+def sumIntegers(firstInt, secondInt):
+    return firstInt + secondInt
+
+#this could be tricky Because you could call these functions with:
+sumIntegers("2", "3")
+#but the output will be the string "23". To avoid that, you check for types.
+
+def sumIntegers(firstInt, secondInt):
+    if type(firstInt)==type(secondInt)==type(10):
+        return firstInt+secondInt
+    else:
+        print("I need integers!")
+
+# ######################
 # Lambda Expressions
 # ######################
 
