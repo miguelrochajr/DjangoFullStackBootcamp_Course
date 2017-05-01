@@ -1,0 +1,5 @@
+to initialize the environment form Conda, type:
+
+source activate [environment]
+
+In my case, the environment is called myDjangoEnv
