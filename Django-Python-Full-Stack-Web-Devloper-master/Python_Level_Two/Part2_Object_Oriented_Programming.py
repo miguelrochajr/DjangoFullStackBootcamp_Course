@@ -232,13 +232,13 @@ class Animal():
 
 class Dog(Animal):
     def __init__(self):
-        Animal.__init__(self)
+        Animal.__init__(self) #you don't need his line
         print "Dog created"
 
     def whoAmI(self):
         print "Dog"
 
-    def bark(self):
+    def bark(self): #this overwrites the parent class method
         print "Woof!"
 
 d = Dog()
