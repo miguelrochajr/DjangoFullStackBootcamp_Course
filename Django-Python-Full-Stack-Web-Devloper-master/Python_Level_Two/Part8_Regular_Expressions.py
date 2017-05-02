@@ -34,7 +34,7 @@ patterns = [ 'term1', 'term2' ]
 text = 'This is a string with term1, but it does not have the other term.'
 
 for pattern in patterns:
-    print 'Searching for "%s" in: \n"%s"' % (pattern, text),
+    print 'Searching for "%s" in: \n"%s" '%(pattern, text)
 
     #Check for match
     if re.search(pattern,  text):
@@ -196,7 +196,7 @@ test_phrase = 'This is a string! But it has punctuation. How can we remove it?'
 # to check that the match appears at least once, this basically translate into
 # finding the words.
 
-re.findall('[^!.? ]+',test_phrase)
+re.findall('[^!.? ]+',test_phrase) #find parrterns that are not an exclamation (!), dot (.) or an exclamation mak (?)
 
 #############################
 ## Character Ranges #########
@@ -243,13 +243,14 @@ multi_re_find(test_patterns,test_phrase)
 # syntax will become clear.
 
 
+#By Miguel: So, the character 'r' says to Python: "hey, dude! Do not ignore my backslash. thanks."
 test_phrase = 'This is a string with some numbers 1233 and a symbol #hashtag'
 
 test_patterns=[ r'\d+', # sequence of digits
                 r'\D+', # sequence of non-digits
                 r'\s+', # sequence of whitespace
                 r'\S+', # sequence of non-whitespace
-                r'\w+', # alphanumeric characters
+                r'\w+', # alphanumeric (alphabetic and numeric) characters
                 r'\W+', # non-alphanumeric
                 ]
 
