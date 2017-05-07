@@ -14,13 +14,24 @@ import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+#print(__file__) #return this file name
+#print(os.path.abspath(__file__)) # returtns the path of this file
+#print(BASE_DIR) # this BASE_DIR returns the projects path.
+
+#   To get the templates directory, DO NOT do BASE_DIR+"/templates", this may work
+# for UNIX-like systems but will NOT work on Windows. The reason is that windwos uses the
+# backslash instead of the forward. And, if you are on windows, you would put BASE_DIR+"\templates", which
+# is even worse. The '\' is the seen is the escape character.
+# Remmember: we want our code to be cross platform!
+TEMPLATES_DIR = os.path.join(BASE_DIR, "templates")
+
 
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.10/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '4nq02khfsz5jmrf^l1)h5n(5e0tg0(ia2*hoe9ipy=slfuey&b'
+SECRET_KEY = 'x_m##i=+7x3*&8u_$3-fnnbbx+py7(iasi71kjpyrt264dqz8i'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -55,7 +66,7 @@ ROOT_URLCONF = 'StudyHUB.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [TEMPLATES_DIR,], #note that this 'DIR' key points to a list. So you can have multiple template directories
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

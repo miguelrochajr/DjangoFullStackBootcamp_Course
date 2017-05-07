@@ -247,7 +247,7 @@ multi_re_find(test_patterns,test_phrase)
 
 
 #By Miguel: So, the character 'r' says to Python: "hey, dude! Do not ignore my backslash. thanks."
-test_phrase = 'This is a string with some numbers 1233 and a symbol #hashtag'
+test_phrase = 'This is a string with some numbers 1233 and a symbol #hashtag \n'
 
 test_patterns=[ r'\d+', # sequence of digits
                 r'\D+', # sequence of non-digits

@@ -15,9 +15,18 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
+from django.conf.urls import include
 from first_app import views
 
+
+# The include() function allows us to look for a match with regular expressions and link back to our application’s own urls.py file.
+# That wey, each application has its own urls.py file. We will have to manually create an urls.py file on each application.
 urlpatterns = [
-    url(r'^$', views.index, name="The main page for StudyHUB"),
+    url(r'^$', views.index, name='index'),
+    url(r'^first_app/', include('first_app.urls')),
+    url(r'^help/', include('first_app.urls')),
     url(r'^admin/', admin.site.urls),
 ]
+
+
+# see video at 2.16 to see explanation of include()
