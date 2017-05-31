@@ -14,9 +14,10 @@ import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-#print(__file__) #return this file name
-#print(os.path.abspath(__file__)) # returtns the path of this file
-#print(BASE_DIR) # this BASE_DIR returns the projects path.
+# print(__file__)                  #return this file name
+# print(os.path.abspath(__file__)) # returtns the path of this file
+# print(BASE_DIR)                  # this BASE_DIR returns the projects path.
+
 
 #   To get the templates directory, DO NOT do BASE_DIR+"/templates", this may work
 # for UNIX-like systems but will NOT work on Windows. The reason is that windwos uses the
@@ -24,7 +25,8 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # is even worse. The '\' is the seen is the escape character.
 # Remmember: we want our code to be cross platform!
 TEMPLATES_DIR = os.path.join(BASE_DIR, "templates")
-
+STATIC_DIR = os.path.join(BASE_DIR, "static")           # this is for the STATIC folder.
+                                                        # the folder contains images and css files
 
 
 # Quick-start development settings - unsuitable for production
@@ -48,7 +50,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'first_app'
+    'first_app'                     # our new application for Django
 ]
 
 MIDDLEWARE = [
@@ -129,4 +131,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.10/howto/static-files/
 
-STATIC_URL = '/static/'
+STATIC_URL = '/static/'     # this specifies the URL of the Static files that can be accessed thgough the server
+STATICFILES_DIRS = [
+    STATIC_DIR,
+]

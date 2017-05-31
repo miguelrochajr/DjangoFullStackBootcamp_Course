@@ -22,7 +22,7 @@ from first_app import views
 # The include() function allows us to look for a match with regular expressions and link back to our application’s own urls.py file.
 # That wey, each application has its own urls.py file. We will have to manually create an urls.py file on each application.
 urlpatterns = [
-    url(r'^$', views.index, name='index'),
+    url(r'^$', views.index, name='index'),          #here, when it finds a empty line, calls the views.index function
     url(r'^first_app/', include('first_app.urls')),
     url(r'^help/', include('first_app.urls')),
     url(r'^admin/', admin.site.urls),

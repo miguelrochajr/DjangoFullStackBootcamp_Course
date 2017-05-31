@@ -16,3 +16,7 @@ def index(request):
 def help(request):
     helpdic = {'help_insert': "HELP PAGE"}
     return render(request, 'first_app/help.html', context=helpdic)
+
+def information(request):
+    helpdic = {'help_insert': "INFO PAGE!"}
+    return render(request, 'first_app/help.html', context=helpdic)

@@ -1,13 +1,15 @@
 <!DOCTYPE html>
+{% load staticfiles %}
 <html>
   <head>
     <meta charset="utf-8">
     <title>StudyHUB!</title>
+    <link rel="stylesheet" href="{% static "css/myStyle.css" %}">
   </head>
   <body>
     <h1>Welcome to StudyHUB!</h1>
     <!-- below you have the django template TAG -->
-    {{ insert_me }}
+    <img src="{% static "images/opencv.png" %}" alt="Could not render the image.">
     <!-- the django TAG has to be connected to our actual project and our application -->
 
   </body>
