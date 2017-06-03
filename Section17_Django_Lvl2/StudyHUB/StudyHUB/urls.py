@@ -13,22 +13,12 @@ Including another URLconf
     1. Import the include() function: from django.conf.urls import url, include
     2. Add a URL to urlpatterns:  url(r'^blog/', include('blog.urls'))
 """
-from django.conf.urls import url
+from django.conf.urls import url, include
 from django.contrib import admin
-from django.conf.urls import include
-from first_app import views
-from StudyHUB import views as SHviews
+from app_courses import views
 
-
-# The include() function allows us to look for a match with regular expressions and link back to our application’s own urls.py file.
-# That wey, each application has its own urls.py file. We will have to manually create an urls.py file on each application.
 urlpatterns = [
-    url(r'^$', views.index, name='index'),          #here, when it finds a empty line, calls the views.index function
-    url(r'^first_app/', include('first_app.urls')),
-    url(r'^help/', include('first_app.urls')),
-    url(r'^users/', SHviews.views),
+    url(r'^$', views.index, name='index'),
     url(r'^admin/', admin.site.urls),
+    url(r'^users/', include('app_courses.urls')),
 ]
-
-
-# see video at 2.16 to see explanation of include()

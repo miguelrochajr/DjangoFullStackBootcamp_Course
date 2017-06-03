@@ -13,15 +13,17 @@
 
     <div class="djangotwo">
       <!-- if we have the access_records, then inject it -->
-      {% if access_records %}
+      {% if all_users %}
         <table>
-          <th>Site name</th>
-          <th>Date Acessed</th>
+          <th>First name</th>
+          <th>Last name</th>
+          <th>Email</th>
 
-          {% for acc in access_records %}
+          {% for user in all_users %}
           <tr>
-            <td> {{ acc.name }} </td>
-            <td> {{ acc.date }} </td>
+            <td> {{ user.first_name }} </td>
+            <td> {{ user.last_name }} </td>
+            <td> {{ user.email }} </td>
           </tr>
           {% endfor %}
 

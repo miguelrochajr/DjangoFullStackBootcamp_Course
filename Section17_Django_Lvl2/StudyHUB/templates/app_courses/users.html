@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Users</title>
+  </head>
+  <body>
+    <h1>Here are your users: </h1>
+    {% if users %}
+      <!-- the exists a tag called users, create an ordered list -->
+    <ol>
+      {% for user in users %}
+      <li>User Information</li>
+        <ul>
+          <li>First name: {{ user.first_name }}</li>
+          <li>Last name: {{ user.last_name }}</li>
+          <li>Email: {{ user.email }}</li>
+        </ul>
+      {% endfor %}
+    </ol>
+    {% endif %}
+
+  </body>
+</html>
