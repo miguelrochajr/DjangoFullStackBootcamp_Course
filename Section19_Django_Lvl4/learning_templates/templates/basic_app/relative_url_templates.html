@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>WELCOME TO relative templates!</h1>
+    <!-- the basic app name here has to match the one declared on basic_app/urls.py -->
+    <a href="{% url 'basic_app:other' %}"> TO OTHER PAGE  <br> </a>
+    <!-- IMPORTANT: Django will look for spaces in the string. So DON'T LEAVE spaces between the quotation marks -->
+    <a href="{% url 'admin:index' %}">ADMIN! <br></a>
+    <a href="{% url 'index' %}">LINK TO INDEX!</a>
+  </body>
+</html>
