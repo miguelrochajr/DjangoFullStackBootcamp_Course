@@ -2,5 +2,8 @@
 {% extends "basic_app/base.html" %}
   {% block body_block %}
     <h1>Welcome to the index page! </h1>
-    <h2>Deamn! Thais is my index page, dude!</h2>
+    <!-- <h2>Deamn! Thais is my index page, dude!</h2> -->
+    <!-- Remind that the function cut was declared under templatetags/my_extras.py -->
+    <h1>{{ text|cut:'world' }}</h1>
+    <h1>{{ number|add:"99" }}</h1>
   {% endblock %}
