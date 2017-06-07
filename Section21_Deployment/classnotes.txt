@@ -1,0 +1,7 @@
+we are using wwww.pythonanywhere.com
+
+create account
+go to console
+
+To make a virtual environment:
+  mkvirtualenv --python=python3.6 <virtual env name>
