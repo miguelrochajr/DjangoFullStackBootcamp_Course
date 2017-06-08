@@ -1,0 +1,73 @@
+.techfont{
+  font-family: 'Russo One', sans-serif;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.postdate{
+  text-align: center;
+}
+
+.posttitle{
+  font-family: 'Russo One', sans-serif;
+  font-size: 3em;
+  text-align: center;
+}
+
+.postcontent{
+  font-family: 'Montserrat';
+  font-size: 1.5em;
+}
+
+.centerstage{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn-comment{
+  position: absolute;
+  right: 0px;
+}
+
+.bigbrand{
+  font-size: 1.5em;
+}
+
+
+/*COLOR CHANGER*/
+/*Credit and Source: http://codepen.io/thapliyalshivam/pen/dvgXVO*/
+.loader{
+  filter:hue-rotate(0deg);
+  color: linear-gradient(45deg,#0f8,#08f);
+  animation:hue 5000ms infinite linear;
+}
+
+@keyframes spinify {
+  0% {
+    transform: translate(0px,0px);
+
+  }
+  33% {
+    transform: translate(0px,24px);
+    border-radius:100%;
+    width:10px;
+    height:10px;
+
+  }
+   66% {
+    transform:translate(0px,-16px);
+  }
+
+   88% {
+    transform:translate(0px,4px);
+
+  }
+  100% {
+    transform:translate(0px,0px);
+  }
+}
+@keyframes hue{
+  0%{filter: hue-rotate(0deg);}
+  100%{filter:hue-rotate(360deg);}
+
+}

@@ -7,9 +7,20 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   </head>
   <body>
+    <nav class="navbar navbar-default navbar-static-top">
+      <ul class="nav navbar-nav">
+        <!-- Remmember: the URL template is referring to basic_app urls.py, and calling the URL named 'list' -->
+        <li><a class="navbar-brand" href="{% url 'basic_app:list' %}">Schools</a></li>
+        <li><a class="navbar-link" href="{% url 'admin:index' %}">Admin</a></li>
+        <li><a class="navbar-link" href="{% url 'basic_app:list' %}"></a></li>
+
+
+      </ul>
+
+    </nav>
     <div class="container">
       {% block body_block %}
-      
+
       {% endblock %}
     </div>
 

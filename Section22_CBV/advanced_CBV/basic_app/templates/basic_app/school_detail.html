@@ -1,0 +1,26 @@
+{% extends 'basic_app/basic_app_base.html' %}
+
+{% block body_block %}
+<div class="jumbotron">
+  <h1>Welcome to the School Detailed page!</h1>
+  <h2>School details:</h2>
+  <p>Name: {{school_detail.name}}</p>
+  <p>Principal: {{school_detail.principal}}</p>
+  <p>Location: {{school_detail.location}}</p>
+
+  <h3>Students</h3>
+  <!-- NOTE: the school_list is the context_object_name we provided in basic_app/views.py
+    The tricky part here is the school_detail.students . This is the related_name on students.
+    It is like going to the SQL and query for all students in that particular school, since school
+  is a ForeignKey for the Student.  -->
+  {% for student in school_detail.students.all %}
+    <p>{{student.name}} who is {{student.age}} years old.</p>
+  {% endfor %}
+</div>
+
+<div class="container">
+  <p><a class="btn btn-warning" href="{% url 'basic_app:update' pk=school_detail.pk%}">Update</a></p>
+
+</div>
+
+{% endblock %}

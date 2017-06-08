@@ -1,0 +1,4 @@
+check it out two nice things:
+
+Book: Two Scoops of Django 1.11 https://www.twoscoopspress.com/
+Framework: Cookiecutter https://github.com/pydanny/cookiecutter-django
