@@ -1,0 +1,14 @@
+{% extends "blog/base.html" %}
+{% block content %}
+  <h1> New Post</h1>
+  <form class="post-form" method="POST">
+    {% csrf_token %}
+    {{form.as_p}}
+    <button type="submit" class='save btn btn-default'>Save</button>
+  </form>
+
+  <!-- Remmember that the editable class was added in the forms file. We added as
+  a widget with the key 'text' -->
+  <script> var editor = new MediumEditor('.editable');</script>
+
+{% endblock %}

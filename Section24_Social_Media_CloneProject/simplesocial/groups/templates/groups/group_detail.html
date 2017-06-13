@@ -1,0 +1,34 @@
+{% extends "groups/group_base.html" %}
+{% block pregroup %}
+
+  {# this context dictionary comes from the Groups model lower cased from CBV#}
+  <h1>{{group.name}}</h1>
+  <h2>Member count: {{ group.members.count }}</h2>
+
+  <div class="content">
+
+    {% if user in group.members.all %} {# if the user is in the group, do the following#}
+
+      <a href="{% url 'groups:leave' slug=group.slug %}"
+        class="btn btn-lg btn-fill btn-warning"><span
+        class="glyphicon glyphicon-remove-circle">Leave</span></a>
+    {% else %}
+      <a href="{% url 'groups:join' slug=group.slug %}"
+        class="btn btn-lg btn-fill btn-warning"><span
+        class="glyphicon glyphicon-ok-circle">Join</span></a>
+    {% endif %}
+  </div>
+
+{% endblock %}
+
+{% block group_content %}
+  <div class="col-md-8">
+    {% if group.posts.count == 0 %} {# If the group has no posts #}
+      <h2>No posts in this group yet!</h2>
+    {% else %}
+      {% for post in group.posts.all %}
+        {% include "post/_post.html" %} {# We will inject this html in our current#}
+      {% endfor %}
+    {% endif %}
+  </div>
+{% endblock %}
