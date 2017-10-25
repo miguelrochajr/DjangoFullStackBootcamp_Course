@@ -13,7 +13,7 @@ def index(request):
 ######
 # This is what the view looked like before having it check for the POST
 # Check the updated view for how to grab the form data!
-######
+######f
 # def form_name_view(request):
 #     form = forms.FormName()
 #     return render(request,'basicapp/form_page.html',{'form':form})
