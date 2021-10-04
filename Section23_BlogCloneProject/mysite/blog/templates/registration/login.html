@@ -3,12 +3,21 @@
 {% block content %}
   <div class="jumbotron">
 
-    <h2>Please Login: </h2>
-    <h3>(Must be SuperUser, please check admin for issues.)</h3>
+    <h2 class='text-center'>Please Login: </h2>
+    <h3 class='text-warning'>(Must be SuperUser, please check admin for issues.)</h3>
     {% if form.errors %}
-        <p>Your username and password didn't match.Please try again!</p>
+        <p class='text-danger my-3'>Your username and password didn't match.Please try again!</p>
     {% endif %}
 
+                    {% if messages %}
+                    {% for message in messages %}
+                    <p class="alert alert-{{ message.tags }} alert-dismissible fade show" role="alert">
+                        {{ message }}
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </p>
+                    {% endfor %}
+                {% endif %}
+    
     <form method="POST" action="{% url 'login' %}">
     {% csrf_token %}
         {{form.as_p}}
